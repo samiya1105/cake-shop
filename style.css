@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    color: white;
+}
+.header-style{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo-disp{
+    display:flex;
+    justify-content: space-between;
+    margin:30px;
+    width:100px;
+}
+.logo-clr{
+    text-decoration: none;
+    color:white;
+}
+.logo-hover:hover{
+    color:goldenrod;
+    
+}
+button{
+    color:goldenrod;
+    border:2px solid goldenrod;
+    background-color: black;
+    padding:10px 20px;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: goldenrod;
+    color: white;
+}
+.navigations{
+    position: sticky;
+    top:1px;
+}
+.nav-ctrl{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0px 450px;
+    text-transform: capitalize;
+}
+.txthover:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.bgimg{
+    background-image:url("https://preview.colorlib.com/theme/cakeshop/assets/img/hero/h1_hero1.jpg");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-size:50px;
+    padding: 350px 100px;
+    text-transform: capitalize;
+}
+#ordernow{
+    position: absolute;
+    background-color: goldenrod;
+    color:black;
+    font-size: 15px;
+    padding:15px 50px;
+    text-transform: uppercase;
+    height: 70px;
+    top:700px;
+    left:110px;
+}
+#ordernow:hover{
+    background-color:black;
+    color: goldenrod;
+}
