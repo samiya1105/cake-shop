@@ -2,6 +2,18 @@ body{
     background-color: black;
     color: white;
 }
+.uparrow{
+    position: fixed;
+    border-radius: 50%;
+    background-color: goldenrod;
+    font-size: 25px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    bottom: 20px;
+    right: 10px;
+}
 .header-style{
     display: flex;
     justify-content: space-between;
@@ -16,49 +28,74 @@ body{
 .logo-clr{
     text-decoration: none;
     color:white;
+    font-size: 20px;
 }
-.logo-hover:hover{
+.logo-clr:hover{
     color:goldenrod;
+    /* transform:rotate(0deg);
+    rotate:0deg; */
     
 }
-button{
+#call-btn{
     color:goldenrod;
     border:2px solid goldenrod;
     background-color: black;
-    padding:10px 20px;
+    font-size: 15px;
+    padding:20px 30px;
     margin-top: 30px;
 }
-button:hover{
+#call-btn:hover{
     background-color: goldenrod;
     color: white;
 }
 .navigations{
+    border: 2px solid white;
     position: sticky;
-    top:1px;
+    top:0;
+    height:100px;
+    width: 100%;
 }
 .nav-ctrl{
     display: flex;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     justify-content:space-between;
-    padding: 10px;
+    padding: 35px;
     list-style-type: none;
-    margin: 0px 450px;
-    text-transform: capitalize;
+    margin: 0px 400px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
 }
+/* .itemss{
+    position: sticky;
+    top:10px;
+    height: 50px;
+} */
 .txthover:hover{
     color: goldenrod;
     text-decoration: underline;
 }
+.back-container{
+    position: relative;
+}
 .bgimg{
-    background-image:url("https://preview.colorlib.com/theme/cakeshop/assets/img/hero/h1_hero1.jpg");
-    width:100%;
+    width: 100%;
+    height: 700px;
+    left: 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom:0px;
 }
-p{
-    font-size:50px;
-    padding: 350px 100px;
+ .bg-text{
+    font-family: "Poiret One", cursive;
+    position: absolute;
+    font-size:80px;
+    padding: 100px;
     text-transform: capitalize;
-}
+    top:250px;
+ }
 #ordernow{
     position: absolute;
     background-color: goldenrod;
@@ -67,10 +104,310 @@ p{
     padding:15px 50px;
     text-transform: uppercase;
     height: 70px;
-    top:700px;
+    top:420px;
     left:110px;
 }
 #ordernow:hover{
     background-color:black;
+    color: goldenrod;
+    border:1px solid goldenrod;
+}
+.adv-heading{
+    font-family: "Poiret One", cursive;
+    font-size: 45px;
+    font-weight: 100;
+    line-height: 1.3;
+    padding:50px 450px;
+    text-align: center;
+}
+.adv-display{
+    display: flex;
+    padding: 5px 200px;
+    gap: 100px;
+}
+h2{
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+    color: goldenrod;
+    font-weight: 100;
+}
+#caption{
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+.cakes-slider{
+    display: flex;
+    margin: 100px 80px;
+    justify-content: space-between;
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+    position: relative;
+    :hover{
+        #cart{
+            visibility: visible;
+        }
+    }
+}
+.cake-img-hover{
+    width:55vh;
+}
+.cake-cost{
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+    color: goldenrod;
+}
+#cart{
+    visibility: hidden;    
+    font-family: "Jost", sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top:670px;
+    margin: -394px;
+    padding: 10px 150px;
+    background-color: goldenrod;
+}
+.angle-prv-next{
+    color:rgba(229,191,74,0.5);
+    position: relative;
+    top:150px;
+}
+.angle-prv-next:hover{
+    color:goldenrod;
+}
+.video-container{
+    position: relative;
+    margin: 100px 80px;
+}
+.videoplay{
+    position: absolute;
+    background-color:whitesmoke;
+    border-radius: 50%;
+    padding:50px;
+    top: 250px;
+    left: 600px;
+    /* opacity:0.1; */
+}
+#video-btn{
+    border-radius: 50%;
+    background-color: goldenrod;
+    border: none;
+    padding: 50px;
+    opacity: 0.9;
+}
+#video-btn:hover{
+    background-color: white;
+}
+.play-btn{
+    color: black;
+    font-size: 35px;
+}
+.feedback-container{
+    /* border: 3px solid white; */
+    margin-top: 100px;
+    padding: 10px;
+}
+#feedback-heading{
+    color: white;
+    font-family: "Poiret One", cursive;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 100px;
+}
+.review-container{
+    /* border:2px solid blue; */
+    display: flex;
+    margin:0px 100px;
+}
+.items{
+    border:1px solid white;
+    border-left: none;
+    border-right: none;
+    padding: 40px 0px;
+}
+.item2{
+    border: 1px solid white;
+}
+.ratings{
+    display: flex;
+    list-style: none;
+    color: goldenrod;
+}
+h3{
+    padding: 10px 55px;
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.customer-profile{
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+}
+.blog-container{
+    display: flex;
+    /* border: 2px solid white; */
+    margin:100px 50px;
+    padding: 1px 80px;
+    justify-content: space-between;
+}
+#blog{
+    font-size: 40px;
+    font-family: "Poiret One", cursive;
+    font-weight: 100;
+}
+#blog-btn{
+    font-size: 15px;
+    background-color: goldenrod;
+    color: black;
+    text-transform: uppercase;
+    padding: 25px 50px;
+}
+#blog-btn:hover{
+    color:goldenrod;
+    background-color: black;
+    border: 1px solid goldenrod;
+}
+.about-blog{
+    display: flex;
+    /* border:3px solid blue; */
+    justify-content: space-between;
+    gap: 20px;
+    height: 40vh;
+}
+#blogimg{
+    height: 60vh;
+    width: 50vh;
+    /* border: 3px solid yellow; */
+}
+.blog-img-text{
+    display: flex;
+    /* border:2px solid red; */
+    height: 60vh;
+    /* justify-content: space-between; */
+    /* margin: 50px 10px; */
+}
+#blog-heading{
+    font-size: 25px;
+    font-family: "Poiret One", cursive;
+    font-weight: 900;
+    color: goldenrod;
+    padding-left: 10px;
+
+}
+.blog-text{
+    padding: 0px 20px;
+    font-size: 19px;
+    font-family: "Jost", sans-serif;
+    border:1px solid white;
+}
+.learnlink{
+    font-size: 15px;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+.learnlink:hover{
+    font-size: 16px;
+}
+.about-follow{
+    /* border:2px solid aqua; */
+    /* margin:100px 0px */
+    margin-top: 300px;
+    margin-bottom: 100px;
+    align-content: center;
+}
+.follow-txt-btn{
+    text-align: center;
+    font-size:40px;
+    font-family: "Poiret One", cursive;
+    padding-bottom: 50px;
+    /* border:2px solid white; */
+}
+#cakeshop-btn{
+    font-size: 15px;
+    padding: 20px 40px;
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+.cupcakes{
+    /* border: 2px solid red; */
+    margin:10px 0px;
+}
+.cupcakes-container{
+    display: flex;
+    /* border: 2px solid yellow; */
+    padding: 10px 90px;
+    list-style: none;
+    justify-content: space-between;
+}
+.contact-address{
+    padding:50px 150px;
+    margin: 10px;
+    /* border: 2px solid blueviolet; */
+}
+.bottom-header{
+    display: flex;
+    padding:10px 0px;
+    /* border:1px solid red; */
+}
+.bottom-list{
+    margin: 10px 18px;
+}
+.message{
+    display: flex;
+    /* border: 2px solid red; */
+    gap: 100px;
+    padding: 50px 0px;
+}
+.small-abt{
+    /* border: 1px solid aqua; */
+    padding: 1px;
+}
+.display-abt{
+    /* border:1px solid yellow; */
+    margin-bottom: 30px;
+}
+.botton-icon{
+    font-size: 10px;
+    text-transform: none;
+}
+#btn-logo{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 20px 30px;
+    margin: 0px 20px;
+    font-size: 15px;
+}
+#btn-logo:hover{
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+#loc-cont-head{
+    font-size: 30px;
+    font-family: "Poiret One", cursive;
+    color: goldenrod;
+}
+.bottom-logo{
+    font-size: 25px;
+}
+#loc-cont-data{
+    font-size:20px;
+    font-family: "Jost", sans-serif;
+}
+.abt-footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.foot{
+    font-family: "Jost", sans-serif;   
+}
+#heart{
     color: goldenrod;
 }
