@@ -277,24 +277,21 @@ h3{
     border: 1px solid goldenrod;
 }
 .about-blog{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     /* border:3px solid blue; */
     justify-content: space-between;
     gap: 20px;
-    /* height: 40vh; */
 }
 #blogimg{
     height: 60vh;
     width: 50vh;
-    width: 100%;
     /* border: 3px solid yellow; */
 }
 .blog-img-text{
     display: flex;
     /* border:2px solid red; */
     height: 60vh;
-    /* justify-content: space-between; */
-    /* margin: 50px 10px; */
 }
 #blog-heading{
     font-size: 25px;
@@ -489,7 +486,7 @@ h3{
     }
     .videoplay{
         top: 55px;
-        left: 125px;
+        left: 140px;
         padding: 7px;
     }
     #video-btn{
@@ -506,6 +503,82 @@ h3{
         /* border:2px solid blue; */
         flex-wrap: wrap;
         margin:0px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .items{
+        margin: 20px 0px;
+    }
+    .item1{
+        border:1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+    .item2{
+        border:1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+    .item3{
+        border:1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+    .blog-container{
+        margin:20px 0px;
+        padding: 0px 10px;
+    }
+    #blog{
+        font-size: 20px;
+    }
+    #blog-btn{
+        font-size: 10px;
+        margin-top: 15px;
+        padding:10px;
+    }
+    .about-blog{
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    .blog-img-text{
+        flex-wrap: wrap;
+        /* margin-bottom: 10px; */
+        /* height: 60vh; */
+    }
+    #blogimg{
+        height: 100%;
+        width: 100%;
+    }
+    .blog-text{
+        padding: 0px 20px;
+        border:1px solid white;
+    }
+    .about-follow{
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+    .follow-txt-btn{
+        font-size:30px;
+        /* padding-bottom: 50px; */
+    }
+    .cupcakes{
+        margin:10px 0px;
+    }
+    .cupcakes-container{
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        justify-content: center;
+    }
+    .contact-address{
+        padding:50px 0px;
+        /* margin: 10px; */
+    } 
+    .bottom-header-text{
+        margin-left: 0px;
+    }
+    .bottom-header{
+        flex-wrap: wrap;
     }
 } 
  /* @media only screen and(min-device-width: 768px)and (max-device-width: 1024) {
