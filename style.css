@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: white;
+    /* overflow-x:hidden; */
 }
 .uparrow{
     position: fixed;
@@ -50,7 +51,7 @@ body{
 }
 .navigations{
     border: 2px solid white;
-    position: sticky;
+    position:sticky;
     top:0;
     height:100px;
     width: 100%;
@@ -65,37 +66,26 @@ body{
     list-style-type: none;
     margin: 0px 400px;
     text-transform: uppercase;
-    position: sticky;
-    top: 0;
 }
-/* .itemss{
-    position: sticky;
-    top:10px;
-    height: 50px;
-} */
 .txthover:hover{
     color: goldenrod;
     text-decoration: underline;
 }
-.back-container{
-    position: relative;
-}
-.bgimg{
-    width: 100%;
-    height: 700px;
-    left: 0px;
-    background-repeat: no-repeat;
+.bg-container{
+    background-image:url("images/bg-img1.jpg");
+    background-position: center;
     background-size: cover;
-    margin-bottom:0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
  .bg-text{
     font-family: "Poiret One", cursive;
-    position: absolute;
     font-size:80px;
     padding: 100px;
     text-transform: capitalize;
-    top:250px;
- }
+    top:250px; 
+}
 #ordernow{
     position: absolute;
     background-color: goldenrod;
@@ -104,7 +94,7 @@ body{
     padding:15px 50px;
     text-transform: uppercase;
     height: 70px;
-    top:420px;
+    top:650px;
     left:110px;
 }
 #ordernow:hover{
@@ -130,6 +120,9 @@ h2{
     font-size: 25px;
     color: goldenrod;
     font-weight: 100;
+}
+.img-width{
+    width: 100%;
 }
 #caption{
     font-family: "Jost", sans-serif;
@@ -293,6 +286,7 @@ h3{
 #blogimg{
     height: 60vh;
     width: 50vh;
+    width: 100%;
     /* border: 3px solid yellow; */
 }
 .blog-img-text{
@@ -370,7 +364,17 @@ h3{
 .bottom-header{
     display: flex;
     padding:10px 0px;
+    justify-content: space-between;
     /* border:1px solid red; */
+}
+.btm-nav-ctrl{
+    display: flex;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    list-style-type: none;
+    margin:auto;
+    text-transform: uppercase;
 }
 .bottom-list{
     margin: 10px 15px;
@@ -428,26 +432,87 @@ h3{
 #heart{
     color: goldenrod;
 }
-/* for different medias screen */
-.test-media{
-    font-size: 100px;
-}
 
- @media only screen and (max-width: 600px) {
-  .test-media{
-      font-size: 50px;
-  }
-
-  .psu-test::first-letter{
-      font-size: 100px;
-      text-transform: capitalize;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .psu-test::first-letter{
-      color:green;
-      font-size: 100px;
-      text-transform: capitalize;
-  }
+ @media only screen and (max-width: 760px) {
+    /* body{
+        background-color: aqua;
+    } */
+    .header-style{
+        flex-wrap: wrap;
+    }
+    .navigations{
+        display: none
+    }
+    .bg-text{
+        font-size:40px;
+        padding: 50px 0px;
+        /* top:250px;  */
+    }
+    #ordernow{
+        top:590px;
+        left:10px;
+    }
+    .adv-heading{
+        font-size: 25px;
+        padding:0px;
+    }
+    .adv-display{
+        flex-wrap: wrap;
+        padding: 5px 0px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .adv-cake-img{
+        width: 100%;
+    }
+    .cakes-slider{
+        flex-wrap: wrap;
+        margin: 100px 0px;
+    }
+    .angle-prv-next{
+       display:block;
+    }
+    #cart{
+        top:640px;
+        margin: -368px;
+        padding: 15px 147px;
+    }
+    .angle-prv-next{
+        display:none;
+    }
+    .vid-img{
+        width:100%;
+    }
+    .video-container{
+        padding: 0px 0px;
+    }
+    .videoplay{
+        top: 55px;
+        left: 125px;
+        padding: 7px;
+    }
+    #video-btn{
+        border-radius: 50%;
+        padding: 15px;
+    }
+    .play-btn{
+        font-size: 15px;
+    }
+    #feedback-heading{
+        font-size: 25px;
+    }
+    .review-container{
+        /* border:2px solid blue; */
+        flex-wrap: wrap;
+        margin:0px;
+    }
 } 
+ /* @media only screen and(min-device-width: 768px)and (max-device-width: 1024) {
+    body{
+        background-color: red;
+    }
+    .nav-ctrl{
+        margin: 0px 250px;
+    }
+}  */
