@@ -102,6 +102,17 @@ body{
     color: goldenrod;
     border:1px solid goldenrod;
 }
+#toggletheme{
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    top: 280px;
+    right: 20px;
+    cursor: pointer;
+}
 .adv-heading{
     font-family: "Poiret One", cursive;
     font-size: 45px;
@@ -159,9 +170,9 @@ h2{
     position: absolute;
     text-align: center;
     font-size: 15px;
-    top:590px;
-    margin: -353px;
-    padding: 15px 139px;
+    top:655px;
+    margin: -392px;
+    padding: 15px 160px;
     background-color: goldenrod;
 }
 .angle-prv-next{
@@ -198,7 +209,7 @@ h2{
     background-color: goldenrod;
     border: none;
     padding: 30px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 #video-btn:hover{
     background-color: white;
