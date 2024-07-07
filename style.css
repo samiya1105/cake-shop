@@ -430,7 +430,7 @@ h3{
     color: goldenrod;
 }
 
- @media only screen and (max-width: 760px) {
+ @media only screen and (max-width: 600px) {
     /* body{
         background-color: aqua;
     } */
@@ -446,7 +446,7 @@ h3{
         /* top:250px;  */
     }
     #ordernow{
-        top:590px;
+        top:500px;
         left:10px;
     }
     .adv-heading{
@@ -580,8 +580,30 @@ h3{
     .bottom-header{
         flex-wrap: wrap;
     }
+    .btm-nav-ctrl{
+        font-size: 10px;
+        margin: 10px -30px;
+    }
+    .message{
+        flex-wrap: wrap;
+        padding: 5pxx;
+        gap:50px
+    }
+    .small-abt{
+        padding: 20px 0px;
+    }
+    #btn-logo{
+        margin: 10px 0px;
+    }
+    .abt-footer{
+        margin: 80px 0px;
+    }
+    .foot{
+        font-size: 12px;   
+    }
+
 } 
- /* @media only screen and(min-device-width: 768px)and (max-device-width: 1024) {
+ /* @media only screen and (min-device-width: 600) {
     body{
         background-color: red;
     }
