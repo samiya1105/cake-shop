@@ -1,7 +1,6 @@
 body{
     background-color: black;
     color: white;
-    /* overflow-x:hidden; */
 }
 .uparrow{
     position: fixed;
